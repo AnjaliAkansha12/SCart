@@ -1,0 +1,20 @@
+.navbar-wrapper{
+    width: 98.8vw;
+    height: 6vh;
+    padding: 8px;
+    background-color: #131921;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-left-side{
+    width:20%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
