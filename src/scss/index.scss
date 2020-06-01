@@ -1,18 +1,63 @@
-@import './navbar.scss';
-@import './shoppingpage.scss';
-@import './cartList.scss';
+@import './card.scss';
+@import './cart.scss';
+@import './headerView.scss';
+@import './productListing.scss';
+@import './button.scss';
+@import './login.scss';
+
+:root{
+  --mainBlue:#2a2a72;
+  --lightBlue:#009ffd;
+  --mainWhite:#f3f3f3;
+  --mainDark:#232528;
+  --lightDark:#8b8b94;
+  --mainYellow:#ffa400;
+  --color-primary: #eb2f64;
+}
+
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
 
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  background: var(--mainWhite);
+  color:var(--mainDark);
+  font-family: 'Oswald',sans-serif,-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+.text-title{
+  font-family: "Permanent Marker",cursive;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+}
+
+.text-blue{
+  color:var(--mainBlue);
+}
+
+.text-bright{
+  color:var(--lightBlue);
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+

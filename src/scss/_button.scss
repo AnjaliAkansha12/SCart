@@ -1,0 +1,64 @@
+.filter-submit-button-wrapper button {
+    font-family: inherit;
+    text-transform: uppercase;
+    outline: 0;
+    background: var( --lightBlue);
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 3px;
+    margin-left: 18px;
+    margin-top: 18px;
+    color: #FFFFFF;
+    font-size: 12px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    }
+    .filter-submit-button-wrapper button:hover,.filter-submit-button-wrapper button:active,.filter-submit-button-wrapper button:focus {
+    background:var(--mainBlue);
+    }
+
+
+    .logout{
+        border-radius: 40%;
+        font-size: 2rem;
+        font-family: inherit;
+        letter-spacing: .5rem;
+        font-weight: 600;
+        background-color: var(--mainBlue);
+        color: var(--color-primary);
+        border: transparent;
+        text-transform: uppercase;;
+    }
+
+    .remove{
+        border: transparent;
+        font-size: 3rem;
+        color:  var(--lightBlue);
+        background-color: white;
+    }
+    
+    .size{
+        height: 2rem;
+        width:2rem;
+        margin-right: 1rem;
+        background-color: var(--lightBlue);
+        border: transparent;
+        border-radius: 1rem;
+
+        
+    }
+    
+
+    .notification{
+        position: absolute;
+        right:16%;
+        top:-0.01rem;
+        padding: 0.6rem;
+        font-size:1.5rem;
+        font-weight: 400;
+        color:var(--mainYellow);
+        border-radius: 5rem;
+        margin-top: 0.4rem;
+     }
+    

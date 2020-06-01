@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './scss/index.scss';
-import { ProductProvider } from './Data/Context'
+import { ProductProvider } from './DataRepository/Context'
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 

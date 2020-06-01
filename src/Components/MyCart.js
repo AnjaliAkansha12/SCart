@@ -1,26 +1,26 @@
 import React, { Component } from 'react';
-import NavBarView from '../Views/NavBarView';
-import { ProductConsumer } from '../Data/Context';
+import HeaderView from '../Views/HeaderView';
+import { ProductConsumer } from '../DataRepository/Context';
 import CartList from '../Views/CartList';
 
-export default class Cart extends Component {
+export default class MyCart extends Component {
     render() {
         return (
             <ProductConsumer>
-                {value => {
+                {contextProduct => {
 
                     return (
                         <React.Fragment>
-                            <NavBarView />
+                            <HeaderView />
                             {
-                                value.cartElements ?
-                                    value.productData.filter(product => value.cartElements.includes(product.id))
+                                contextProduct.myCartItems ?
+                                    contextProduct.allProducts.filter(product => contextProduct.myCartItems.includes(product.id))
                                         .map(item => {
                                             return (
                                                 <CartList product={item} key={item.id} />
                                             )
                                         })
-                                    : console.log("non")
+                                    : <p>nothing</p>
                             }
                         </React.Fragment>
                     )
