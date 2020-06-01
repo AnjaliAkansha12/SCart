@@ -9,7 +9,9 @@ export default function Login(payload) {
                 value => {
                     return (
                         <div className="login-container">
+                           <p>Welcome to Scart</p>
                             <div className="login-form-container">
+                            
                                 <form className="form" onSubmit={onSubmitHandler}>
                                     <div className='login-error'>{isValid ? null : <p>Please Enter the Correct Credentials</p>}</div>
                                     <input type="text" id="username" placeholder="Username" onChange={(e) => onInputChange({ username: e.currentTarget.value })} />

@@ -1,8 +1,26 @@
+
+.login-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    font-size: 3rem;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right,var(--mainBlue),var(--lightBlue));
+    -webkit-background-clip: text; 
+    color:transparent;
+    letter-spacing: .2rem;
+    transition: all .2s;
+}
+
 .login-form-container{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../images/bg.jpeg);
+    background-image: url(../images/form.jpeg);
+    height: 100%; 
+    transform: translateX(-3rem) scale(1.2);  
+    backface-visibility: hidden;
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 1;
@@ -16,7 +34,7 @@
     outline-offset: 1.5rem;
 
     &:hover{
-        outline: 1.5rem solid var(--color-primary);
+        outline: 1.5rem solid var(--lightBlue);
         transform: scale(1.05) translate(-3rem);
         box-shadow: 0 2.5rem 4rem rgba(black,.5);
         z-index: 20;
@@ -46,6 +64,8 @@
  label{
      display: block;
      font-size: 1.5rem;
+     color:white;
+     text-transform: uppercase;
  }
 
  .center{
